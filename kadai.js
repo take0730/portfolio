@@ -9,8 +9,8 @@ function hamburger() {
   } );
 
   const image01src = 'url("img/kadai_01.jpeg")';
-const image02src = 'url("img/kadai_02.jpeg")';
-const image03src = 'url("img/kadai_03.jpeg")';
+  const image02src = 'url("img/kadai_02.jpeg")';
+  const image03src = 'url("img/kadai_03.jpeg")';
 
 function nextImage() {
   const header = document.getElementById('top');
