@@ -3,6 +3,174 @@
     padding: 0;
 }
  
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #55e0ce;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+header .container h1 {
+  font-weight: normal;
+  font-size: 2.5rem;
+  flex: 1;
+}
+
+#menu{
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 40%;
+    height: 100vh;
+    background: #ffffff;
+    transition: 0.7s;
+}
+
+#menu ul{
+  padding-top: 80px;
+  
+}
+#menu ul li{
+  list-style-type: none;
+  font-size: 20px;
+  
+}
+#menu a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  margin: 0 15px;
+  padding: 10px;
+  transition: 0.5s;
+  z-index: 10000000000;
+}
+#menu li a:hover{
+  color: #ffffff;
+  background: #41bfe6;
+  border-bottom: none;
+}
+/* ハンバーガーメニュー*/
+#hamburger {
+  position: fixed;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 50px;
+  height: 44px;
+  cursor: pointer;
+  transition: 1s;
+}
+.inner_line {
+  display: flex;
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: 1s;
+  border-radius: 4px;
+}
+#line1 {
+  top: 0;
+}
+#line2 {
+  top: 20px;
+}
+#line3 {
+  bottom: 0px;
+}
+.in{
+  transform: translateX(100%);
+}
+.line_1,.line_2,.line_3{
+  background: #000000;
+  
+}
+.line_1 {
+  transform: rotate(45deg);
+  top: 0;
+}
+.line_2 {
+  opacity: 0;
+}
+.line_3 {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+/* スライドショー */
+#top {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  background-size: cover;
+  background-position: center center;
+}
+
+#top>h1 {
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 1px 1px 3px #ffffff, -1px -1px 0px #ebebeb;
+
+}
+
+.slider-controller {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+.slider-controller ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#sc-to-left,
+#sc-to-right {
+  display: inline-block;
+  font-size: 2rem;
+  width: 120px;
+  line-height: 3em;
+  background-color: #bbb;
+  color: #f0f0f0;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  opacity: 0.75;
+}
+
+section[role="main"]>article,
+section[role="main"]>aside {
+  width: 960px;
+  max-width: 95vw;
+  margin: 0 auto;
+ 
+}
+
+section[role="main"] {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  
+}
+
  /* main */
  
  .main-image {
