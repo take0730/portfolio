@@ -55,7 +55,7 @@ header .container h1 {
   background: #41bfe6;
   border-bottom: none;
 }
-/* ハンバーガーメニュー*/
+/* ハンバーガーメニュー
 #hamburger {
   position: fixed;
   display: flex;
@@ -103,7 +103,7 @@ header .container h1 {
 .line_3 {
   transform: rotate(-45deg);
   bottom: 0;
-}
+} */
 
 /* スライドショー */
 #top {
