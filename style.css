@@ -9,8 +9,66 @@
   margin: 0 auto;
   background-color: #55e0ce;
 }
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+section:nth-child(2n + 1) {
+  background-color: var(--primary-050);
+  color: var(--secondary-050);
+}
+.nav {
+  position: fixed; /* 固定 */
+  top: 0;
+  left: 0;
+  width: 100%;   /* 幅調整 */
 
-header .container {
+  display: flex;
+  align-items: center;
+  /* 子要素の間を開けて端っこピッタリ */
+  justify-content: space-between;
+
+  /* 背景設定しないとナビゲーションの背景が透明のまま */
+  background-color: #fff;
+
+  box-shadow: 0 2px 1rem var(--dark-026);
+}
+
+.nav .menu ul {
+  list-style: none; /* 点を消す */
+  display: flex;
+  align-items: center;
+}
+.nav .menu ul a {
+  color: yellowgreen;
+  text-decoration: none; /* 文字下線消す */
+
+  display: inline-block;  /* 画像と同じ扱いにする */
+  line-height: 1; /* 文字高さを1としておくことで無駄な余白がない */
+  font-size: 1.125rem;
+  padding: calc(1.25rem - 4px) 2rem;
+
+  transition: color,background-color 0.3s;
+
+  border-right: 1px solid var(--dark-012);
+  border-top: 4px solid transparent; 
+  border-bottom: 4px solid transparent; 
+}
+.nav .menu ul li:last-child a {
+  border-right: none;
+}
+
+/* マウスカーソルが乗っかった時 */
+.nav .menu ul a:hover {
+  background-color: rgb(48, 223, 179);
+  color: white;
+  border-bottom: 4px solid var(--secondary-050);
+}
+
+/* header .container {
   display: flex;
   align-items: center;
   height: 100px;
@@ -54,7 +112,7 @@ header .container h1 {
   color: #ffffff;
   background: #41bfe6;
   border-bottom: none;
-}
+} */
 /* ハンバーガーメニュー
 #hamburger {
   position: fixed;
