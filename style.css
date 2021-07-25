@@ -1,24 +1,27 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
- 
-.container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  background-color: #55e0ce;
+*::after,
+*::before {
+    box-sizing: inherit;
 }
-section {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
+
+body {
+  background-color: rgb(223, 223, 223);
 }
+
+.nav h1 {
+  font-size: 1.5rem;
+  font-family: 'Pacifico', cursive;
+  margin-left: 1rem;
+ color:rgb(48, 223, 179);
+}
+
 section:nth-child(2n + 1) {
-  background-color: var(--primary-050);
-  color: var(--secondary-050);
+  background-color: white;
+  
 }
 .nav {
   position: fixed; /* 固定 */
@@ -32,9 +35,10 @@ section:nth-child(2n + 1) {
   justify-content: space-between;
 
   /* 背景設定しないとナビゲーションの背景が透明のまま */
-  background-color: #fff;
+  background-color: rgb(70, 70, 70);
 
   box-shadow: 0 2px 1rem var(--dark-026);
+  z-index: 100;
 }
 
 .nav .menu ul {
@@ -43,7 +47,7 @@ section:nth-child(2n + 1) {
   align-items: center;
 }
 .nav .menu ul a {
-  color: yellowgreen;
+  color: rgb(48, 223, 179);
   text-decoration: none; /* 文字下線消す */
 
   display: inline-block;  /* 画像と同じ扱いにする */
@@ -68,7 +72,7 @@ section:nth-child(2n + 1) {
   border-bottom: 4px solid var(--secondary-050);
 }
 
-/* header .container {
+header .container {
   display: flex;
   align-items: center;
   height: 100px;
@@ -80,88 +84,6 @@ header .container h1 {
   flex: 1;
 }
 
-#menu{
-    position: absolute;
-    top: 0;
-    left: -40%;
-    width: 40%;
-    height: 100vh;
-    background: #ffffff;
-    transition: 0.7s;
-}
-
-#menu ul{
-  padding-top: 80px;
-  
-}
-#menu ul li{
-  list-style-type: none;
-  font-size: 20px;
-  
-}
-#menu a{
-  display: block;
-  text-decoration: none;
-  color: #000000;
-  margin: 0 15px;
-  padding: 10px;
-  transition: 0.5s;
-  z-index: 10000000000;
-}
-#menu li a:hover{
-  color: #ffffff;
-  background: #41bfe6;
-  border-bottom: none;
-} */
-/* ハンバーガーメニュー
-#hamburger {
-  position: fixed;
-  display: flex;
-  position: absolute;
-  top: 20px;
-  left: 30px;
-  width: 50px;
-  height: 44px;
-  cursor: pointer;
-  transition: 1s;
-}
-.inner_line {
-  display: flex;
-  position: absolute;
-  left: 0;
-  width: 50px;
-  height: 3px;
-  background-color: #ffffff;
-  transition: 1s;
-  border-radius: 4px;
-}
-#line1 {
-  top: 0;
-}
-#line2 {
-  top: 20px;
-}
-#line3 {
-  bottom: 0px;
-}
-.in{
-  transform: translateX(100%);
-}
-.line_1,.line_2,.line_3{
-  background: #000000;
-  
-}
-.line_1 {
-  transform: rotate(45deg);
-  top: 0;
-}
-.line_2 {
-  opacity: 0;
-}
-.line_3 {
-  transform: rotate(-45deg);
-  bottom: 0;
-} */
 
 /* スライドショー */
 #top {
@@ -229,47 +151,107 @@ section[role="main"] {
   
 }
 
- /* main */
+
+  /* main */
+
+
+  h1 {
+    text-align: center;
+  }
  
- .main-image {
-    margin: 0 auto;
-    padding: 10px 5px;
-}
-.main-image h1 {
-    font-family: "遊明朝", YuMincho;
-    text-align: center;
-    padding: 10px;
-}
-.gallery {
-    list-style: none;
-    font-size: 0;
-    text-align: center;
-}
-.item {   
-    margin: 5px;
-    display: inline-block;
-    transition-duration: 0.5s;
-}
-figcaption {
-    padding-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
-img {
+  h2{
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 2rem;
+  }
+  
+  h2 span{
+      font-size: 0.4em;
+      color: #686868;
+      line-height: 0.8em;
+  }
+  
+  h3{
+      line-height: 1.2em;
+  }
+  
+  img{
     width: 300px;
     height: 200px;
     cursor: pointer;
-  
-}
-.item:hover{
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-    transform: translateY(-10px);
-    transition-duration: 0.5s;
+   
   }
 
 
+  .work{
+    margin: 0 auto;
+}
 
+.wrapper{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-wrap{
+    margin: 5px;
+    display: inline-block;
+    
+}
+
+.content {
+    height: 200px;
+    margin: 70px 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 50% 50%;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+    text-decoration: none;
+}
+
+
+
+  .popup_wrap input{
+    display: none;
+  }
+  
+  .popup_overlay {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  .popup_trigger {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .popup_content {
+    position: relative;
+    align-self: center;
+    width: 50%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 30px 15px;
+    box-sizing: border-box;
+    background: rgb(231, 226, 218);
+    line-height: 1.4em;
+    transition: 0.5s;
+  }
   
   .popup {
     position: fixed;
@@ -287,8 +269,8 @@ img {
     visibility: visible;
   }
   .popup-inner {
-    position: absolute;
-    left: 50%;
+    position: fixed;
+    left: 100%;
     top: 50%;
     transform: translate(-50%,-50%);
     width: 1000px;
@@ -313,6 +295,179 @@ img {
   }
   .close-btn i {
     font-size: 20px;
-    color: #333;
+    color: rgb(150, 150, 150);
   }
-  
+
+
+  .color_img{
+    margin-bottom: 20px;
+}
+
+.salon_logo{
+    margin: 20px 0;
+}
+
+/* btn */
+.site_btn{
+  text-align: center;
+}
+
+.btn-flat-border {
+display: inline-block;
+padding: 0.3em 1em;
+text-decoration: none;
+color: #67c5ff;
+border: solid 2px #67c5ff;
+border-radius: 3px;
+transition: .4s;
+}
+
+.btn-flat-border:hover {
+background: #67ffe6;
+color: white;
+}
+
+.close_btn {
+position: absolute;
+top: 14px;
+right: 16px;
+font-size: 30px;
+cursor: pointer;
+}
+
+.popup_wrap input:checked ~ .popup_overlay {
+opacity: 1;
+transform: scale(1);
+transition: opacity 0.5s;
+}
+
+.open_btn {
+position: relative;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 200px;
+height: 40px;
+margin:10px auto;
+padding: 8px 16px;
+color: #fff;
+background:#52bea3;
+font-weight: bold;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+border-radius: 3px;
+cursor: pointer;
+transition: .3s ease;
+
+}
+.open_btn:hover{
+  background:#79bd21;
+  color:#fff;
+  transition: .3s ease;
+}
+
+
+
+.modal_img{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.modal_img img{
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 12px grey;
+}
+
+.modal_info{
+    margin-bottom: 10px;
+}
+
+.modal_info dl{
+    margin: 10px 0 20px;
+    padding: 20px;
+    font-size: 0.8em;
+    background-color: #f1f1f1;
+}
+
+.modal_info dt{
+    float: left;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.modal_design h4{
+    margin: 20px 0;
+    padding: 0.25em 0.5em;
+    background: transparent;
+    border-left: solid 5px #68a9cf;
+}
+
+.modal_design h5{
+    margin-bottom: 10px;
+    border-bottom: solid 3px #68a9cf;
+}
+
+.modal_design p{
+    margin-bottom: 10px;
+}
+
+
+
+.profile {
+  margin-top: 5em;
+}
+.profile h2 {
+  font-size: 30pt;
+}
+ .profile div{
+  font-family: serif;
+  font-size: 18pt;
+  margin-left: 3em;
+  list-style: none; 
+}
+
+
+.skill {
+  margin-top: 5em;
+}
+.skill h2 {
+  font-size: 30pt;
+}
+.skill li{
+ font-size: 20pt;
+ margin-left: 5em;
+  list-style: none; 
+  font-family: serif;
+}
+
+.skill2 {
+  margin-top: 5em;
+}
+.skill2 h2 {
+  font-size: 30pt;
+}
+.skill2 li {
+ font-size: 20pt;
+ margin-left: 5em;
+  list-style: none; 
+  font-family: serif;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(70, 70, 70);
+  color:rgb(48, 223, 179);
+  text-align: center;
+  padding: 30px 0;
+  bottom: 0; 
+}
+footer li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}

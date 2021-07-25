@@ -12,135 +12,287 @@
     <header class="nav">
         <div class="menu-ba">
             <div class="container">
-                <h1></h1>
+                <h1>Portfolio</h1>
                 <nav class="menu">
                   <ul>
-                    <li><a href="#sec1">あ</a></li>
-                    <li><a href="#sec2">い</a></li>
-                    <li><a href="#sec3">う</a></li>
-                    <li><a href="#sec4">え</a></li>
+                    <li><a href="#sec1">作品一覧</a></li>
+                    <li><a href="#sec2">プロフィール</a></li>
+                    <li><a href="#sec3">スキル</a></li>
+                    <li><a href="#sec4">資格</a></li>
                   </ul>
                 </nav>
               </div> 
-              <!-- <div id="hamburger">
+              <div id="hamburger">
                   <span class="inner_line" id="line1"></span>
                   <span class="inner_line" id="line2"></span>
                   <span class="inner_line" id="line3"></span>
-              </div> -->
+              </div>
         </div>
     </header>
     <div id="top">
         <nav class="slider-controller">
             <ul>
-              <li><a id="sc-to-left">←</a></li>
-              <li><a id="sc-to-right">→</a></li>
+              <li><a id="sc-to-left"></a></li>
+              <li><a id="sc-to-right"></a></li>
             </ul>
         </nav>
     </div>
     <div class="main-image">
-        <h1>竹中隼のポートフォリオです。</h1>
+        <h1>作品一覧</h1>
         <section id="sec1">
-            <ul class="gallery">
-                <li class="item">
-                    <div class="popup" id="js-popup">
-                        <div class="popup-inner">
-                        <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
-                        <a href="#"><img src="img/image_1-02.mp4" alt="ポップアップ画像"></a>
-                        </div>
-                        <div class="black-background" id="js-black-bg"></div>
+            <div class="work">
+                <div class="inner">
+                    <div class="wrapper items">
+                        <ul>
+                            <li class="item-wrap">
+                                <div class="flex center"></div>
+                                <div class="content item-1">
+                                    <img src="img/image_1-01.png">
+                                </div>
+                                <div class="popup_wrap">
+                                    <input id="modal_01" type="checkbox">
+                                    <div class="popup_overlay">
+                                        <label for="modal_01" class="popup_trigger"></label>
+                                        <div class="popup_content">
+                                            <label for="modal_01" class="close_btn">×</label>
+                                            <div class="modal_tit">
+                                                <h3>ロボットアニメーション</h3>
+                                            </div>
+                                            <img src="img/image_1-01.png" class="modal_img" alt="" controls>
+                                            <div class="modal_info">
+                                                <dl>
+                                                    <dt>制作期間</dt>
+                                                    <dd>1ヶ月程度</dd>
+                                                    <dt>使用ソフト</dt>
+                                                    <dd>Maya</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="modal_design">
+                                                <h4>説明</h4>
+                                                <p>工場などにありそうな物をつかめるロボットを作成しました。<dt></dt>
+                                                物の形を検知し、仕分けをするアニメーションをつけました。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+        
+                                <label for="modal_01" class="open_btn">作品詳細</label>
+                            </li>
+                            <li class="item-wrap">
+                                <div class="flex center"></div>
+                                <div class="content item-2">
+                                    <img src="img/image_1-01.png" >
+                                </div>
+                                <div class="popup_wrap">
+                                    <input id="modal_02" type="checkbox">
+                                    <div class="popup_overlay">
+                                        <label for="modal_02" class="popup_trigger"></label>
+                                        <div class="popup_content">
+                                            <label for="modal_02" class="close_btn">×</label>
+                                            <div class="modal_tit">
+                                                <h3>ロボットアニメーション</h3>
+                                            </div>
+                                            <video src="img/image_1-02.mp4" class="modal_img" alt="" controls>
+                                        </div>
+                                    </div>
+                                </div>  
+                                
+                                <label for="modal_02" class="open_btn">動画</label>
+                            </li>
+                            <li class="item-wrap">
+                                <div class="flex center"></div>
+                                <div class="content item-3">
+                                    <img src="img/image_2.png" >
+                                </div>
+                                <div class="popup_wrap">
+                                    <input id="modal_03" type="checkbox">
+                                    <div class="popup_overlay">
+                                        <label for="modal_03" class="popup_trigger"></label>
+                                        <div class="popup_content">
+                                            <label for="modal_03" class="close_btn">×</label>
+                                            <div class="modal_tit">
+                                                <h3>海中アニメーション</h3>
+                                            </div>
+                                            <img src="img/image_2.png" class="modal_img" alt="">
+                                            <div class="modal_info">
+                                                <dl>
+                                                    <dt>制作時間</dt>
+                                                    <dd>制作途中</dd>
+                                                    <dt>使用ソフト</dt>
+                                                    <dd>Maya</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="modal_design">
+                                                <h4>説明</h4>
+                                                <p>海中で自由に泳ぐ魚を作成しています。<dt></dt>
+                                                   太陽光や影を入れたり、カメラの調整に苦戦しています。
+                                                </p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+        
+                                <label for="modal_03" class="open_btn">作品詳細</label>
+                            </li>
+                            <li class="item-wrap">
+                                <div class="flex center"></div>
+                                <div class="content item-4">
+                                    <img src="img/image_2.png" class="ttl">
+                                </div>
+                                <div class="popup_wrap">
+                                    <input id="modal_04" type="checkbox">
+                                    <div class="popup_overlay">
+                                        <label for="modal_04" class="popup_trigger"></label>
+                                        <div class="popup_content">
+                                            <label for="modal_04" class="close_btn">×</label>
+                                            <div class="modal_tit">
+                                                <h3>海中アニメーション</h3>
+                                            </div>
+                                            <img src="img/image_2.png" class="modal_img" alt="">
+                                            <div class="modal_info">
+                                                <dl>
+                                                    <dt>制作途中</dt>
+                                                    <dd>制作完了次第更新します。</dd>
+                                                
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+        
+                                <label for="modal_04" class="open_btn">動画</label>
+                            </li>
+                            <li class="item-wrap">
+                                <div class="flex center"></div>
+                                <div class="content item-5">
+                                    <img src="img/image_03.png" class="ttl">
+                                </div>
+                                <div class="popup_wrap">
+                                    <input id="modal_05" type="checkbox">
+                                    <div class="popup_overlay">
+                                        <label for="modal_05" class="popup_trigger"></label>
+                                        <div class="popup_content">
+                                            <label for="modal_05" class="close_btn">×</label>
+                                            <div class="modal_tit">
+                                                <h3>ポストカード配色</h3>
+                                            </div>
+                                            <img src="img/image_03.png" class="modal_img" alt="">
+                                            <div class="modal_info">
+                                                <dl>
+                                                    <dt>制作時間</dt>
+                                                    <dd>1週間程度</dd>
+                                                    <dt>使用ソフト</dt>
+                                                    <dd>Illustrator</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="modal_design">
+                                                <h4>説明</h4>
+                                                <p>20代の男性、女性をターゲットにポストカードデザインを作成しました。<dt></dt>
+                                                    若者がターゲットということで明るめのトーンで、基本は４色で配色しました。
+                                                </p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+        
+                                <label for="modal_05" class="open_btn">作品詳細</label>
+                            </li>
+        
+                            <li class="item-wrap">
+                                <div class="flex center"></div>
+                                <div class="content item-6">
+                                    <img src="img/image_04.png" class="ttl">
+                                </div>
+                                <div class="popup_wrap">
+                                    <input id="modal_06" type="checkbox">
+                                    <div class="popup_overlay">
+                                        <label for="modal_06" class="popup_trigger"></label>
+                                        <div class="popup_content">
+                                            <label for="modal_06" class="close_btn">×</label>
+                                            <div class="modal_tit">
+                                                <h3>機械動物</h3>
+                                            </div>
+                                            <img src="img/image_04.png" class="modal_img" alt="">
+                                            <div class="modal_info">
+                                                <dl>
+                                                    <dt>制作時間</dt>
+                                                    <dd>1週間程度</dd>
+                                                    <dt>使用ソフト</dt>
+                                                    <dd>Maya</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="modal_design">
+                                                <h4>デザイン仕様説明</h4>
+                                                <p>
+                                                    機械のような動物を作成しました。<br>
+                                                    関節部分や腕などをバネやネジにしたり、全体的に角ばらせることで機械感を出しました。
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>  
+        
+                                <label for="modal_06" class="open_btn">作品詳細</label>
+                            </li>
+                        </ul>
+                        
+                    </section>
                     </div>
-                        <figure>
-                            <button id="js-show-popup"><img  src="img/image_1-01.png"data-description="画像の説明文"></button>
-                        </figure>
-                </li>
-                    <li class="item">
-                        <div class="popup" id="js-popup">
-                            <div class="popup-inner">
-                            <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
-                            <a href="#"><video src="img/image_1-02.mp4" controls></a>
-                            </div>
-                            <div class="black-background" id="js-black-bg"></div>
-                        </div>
-                            <figure>
-                                <button id="js-show-popup"><img src="img/image_1-01.png"></button>
-                            </figure>
-                    </li>
-                    <li class="item">
-                        <div class="popup" id="js-popup">
-                            <div class="popup-inner">
-                            <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
-                            <a href="#"><img src="img/image_1-01.png" alt="ポップアップ画像"></a>
-                            </div>
-                            <div class="black-background" id="js-black-bg"></div>
-                        </div>
-                            <figure>
-                                <button id="js-show-popup"><img src="img/image_1-01.png" data-image="img/kadai_12.jpg" data-description="画像の説明文"><
-                            </figure>
-                    </li>
-                    <li class="item">
-                        <div class="popup" id="js-popup">
-                            <div class="popup-inner">
-                            <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
-                            <a href="#"><img src="img/image_1-01.png" alt="ポップアップ画像"></a>
-                            </div>
-                            <div class="black-background" id="js-black-bg"></div>
-                        </div>
-                            <figure>
-                                <button id="js-show-popup"><img  src="img/image_1-01.png"data-description="画像の説明文"></button>
-                            </figure>
-                    </li>
-                    <li class="item">
-                        <div class="popup" id="js-popup">
-                            <div class="popup-inner">
-                            <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
-                            <a href="#"><img src="img/image_1-01.png" alt="ポップアップ画像"></a>
-                            </div>
-                            <div class="black-background" id="js-black-bg"></div>
-                        </div>
-                            <figure>
-                                <button id="js-show-popup"><img  src="img/image_1-01.png"data-description="画像の説明文"></button>
-                            </figure>
-                    </li>
-                    <li class="item">
-                        <div class="popup" id="js-popup">
-                            <div class="popup-inner">
-                            <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
-                            <a href="#"><img src="img/image_1-01.png" alt="ポップアップ画像"></a>
-                            </div>
-                            <div class="black-background" id="js-black-bg"></div>
-                        </div>
-                            <figure>
-                                <button id="js-show-popup"><img  src="img/image_1-01.png"data-description="画像の説明文"></button>
-                            </figure>
-                    </li>
+                </div>
+            </div>    
+        </section>
+    </div>
+    <div class="profile">
+        <section id="sec2">
+            <h2>プロフィール</h2>
+            <div>竹中隼
+                2001年7月30日生まれ<dt></dt>
+                趣味は料理とゲーム。好きなアーティストは、ずっと真夜中でいいのに。<dt></dt>
+                幼少期の頃の夢はサッカー選手、小学生の頃は料理人と方向性が定まっていない。
+                今でも、IT系の企業に就職したいと考えているが、具体的にどんなことがしたいか決まっていない。<dt></dt>
+                中学ではソフトテニス部に所属。最初は後衛を努めていたが、コーチの指示により２年生中盤で前衛へ転向。
+                他の人よりも前衛の経験は劣るが、安定したサーブと絶妙なチームワークにより小さな大会でベスト３を獲得。<dt></dt>
+                高校は、ゲームを作ったりプログラミングをしてみたいという軽い気持ちで、愛知産業大学工業高校に入学。
+                入学してからは資格取得に力を入れていた。
+            </div>
+                
+        </section>
+    </div>
+    <div class="skill">
+        <section id="sec3">
+            <h2>スキル</h2>
+            <ul>
+                <li>Maya</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe XD</li>
+                <li>Adobe Animate</li>
             </ul>
         </section>
     </div>
-    <div>
-        <section id="sec2">
-            <h2>プロフィール</h2>
-                竹中隼
-                生年月日
-                7月30日
-                趣味
-                料理、ゲーム
-        </section>
-    </div>
-    <div>
-        <section id="sec3">
-            <h2>スキル</h2>
-                Maya<dr>
-                Adobe Photoshop<dr>
-                Adobe Illustrator <dr>
-                Adobe XD<dr>
-                Adobe Animate<dr>
-        </section>
-    </div>
-    <div>
+    <div class="skill2">
         <section id="sec4">
             <h2>取得資格</h2>
-                ITパスポート
+            <ul>
+                <li>ITパスポート</li>
+                <li>情報技術検定3級</li>
+                <li>電気工事士検定2級　など</li>
+            </ul>
         </section>
     </div>
-        
+
+</body>  
+<footer>
+    <h2>Portfolio</h2>
+    <nav>
+      <ul>
+        <li>LINK</li>
+        <li>LINK</li>
+        <li>LINK</li>
+        <li>LINK</li>
+      </ul>
+    </nav>
+    <p class="copyright">(c) 2021- takenaka Portfolio</p>
+</footer>
 </html>
