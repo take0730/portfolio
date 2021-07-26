@@ -24,17 +24,13 @@ section:nth-child(2n + 1) {
   
 }
 .nav {
-  position: fixed; /* 固定 */
+  position: fixed; 
   top: 0;
   left: 0;
-  width: 100%;   /* 幅調整 */
-
+  width: 100%; 
   display: flex;
   align-items: center;
-  /* 子要素の間を開けて端っこピッタリ */
   justify-content: space-between;
-
-  /* 背景設定しないとナビゲーションの背景が透明のまま */
   background-color: rgb(70, 70, 70);
 
   box-shadow: 0 2px 1rem var(--dark-026);
@@ -42,16 +38,16 @@ section:nth-child(2n + 1) {
 }
 
 .nav .menu ul {
-  list-style: none; /* 点を消す */
+  list-style: none; 
   display: flex;
   align-items: center;
 }
 .nav .menu ul a {
   color: rgb(48, 223, 179);
-  text-decoration: none; /* 文字下線消す */
+  text-decoration: none; 
 
-  display: inline-block;  /* 画像と同じ扱いにする */
-  line-height: 1; /* 文字高さを1としておくことで無駄な余白がない */
+  display: inline-block;  
+  line-height: 1; 
   font-size: 1.125rem;
   padding: calc(1.25rem - 4px) 2rem;
 
@@ -65,7 +61,7 @@ section:nth-child(2n + 1) {
   border-right: none;
 }
 
-/* マウスカーソルが乗っかった時 */
+
 .nav .menu ul a:hover {
   background-color: rgb(48, 223, 179);
   color: white;
@@ -424,10 +420,18 @@ transition: .3s ease;
 .profile h2 {
   font-size: 30pt;
 }
- .profile div{
+
+.profile-photo {
+  display: block; 
+  width: 300px; 
+  height: 300px; 
+  border-radius: 50%; 
+}
+ .profile-text{
+  text-align: center;
   font-family: serif;
   font-size: 18pt;
-  margin-left: 3em;
+  
   list-style: none; 
 }
 
@@ -440,7 +444,7 @@ transition: .3s ease;
 }
 .skill li{
  font-size: 20pt;
- margin-left: 5em;
+ text-align: center;
   list-style: none; 
   font-family: serif;
 }
@@ -453,7 +457,7 @@ transition: .3s ease;
 }
 .skill2 li {
  font-size: 20pt;
- margin-left: 5em;
+ text-align: center;
   list-style: none; 
   font-family: serif;
 }
@@ -466,8 +470,4 @@ footer {
   padding: 30px 0;
   bottom: 0; 
 }
-footer li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-}
+
